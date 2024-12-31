@@ -2,6 +2,9 @@ import { Image, StyleSheet, View, Text } from "react-native";
 import Colors from "@/src/constants/Colors";
 import { Product } from "@/assets/types";
 
+// export const defaultImage =
+//   "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/food/default.png";
+
 type ProductListItemProps = {
   product: Product;
 };
@@ -10,7 +13,7 @@ const ProductListItem = ({ product }: ProductListItemProps) => {
   return (
     <View style={styles.container}>
       <Image
-        className="w-[400px] h-[400px] object-contain"
+        className="w-[350px] h-[350px] px-8 object-contain"
         source={product.image}
         style={styles.image}
       />

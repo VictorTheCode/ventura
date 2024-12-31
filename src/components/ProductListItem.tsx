@@ -1,7 +1,12 @@
 import { Image, StyleSheet, View, Text } from "react-native";
 import Colors from "@/src/constants/Colors";
+import { Product } from "@/assets/types";
 
-const ProductListItem = ({ product }) => {
+type ProductListItemProps = {
+  product: Product;
+};
+
+const ProductListItem = ({ product }: ProductListItemProps) => {
   return (
     <View style={styles.container}>
       <Image
